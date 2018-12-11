@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+  //review function
+  (function() {
+    setInterval(function() {
+      $('.review-carousel .quote.active').each(function() {
+        if ($(this).hasClass('last')) {
+          $(this).parent('.review-carousel').find('.first').addClass('active');
+          $(this).toggleClass('active');
+        } else {
+          var next = $(this).next();
+          next.addClass('active');
+          $(this).toggleClass('active');
+        }
+      });
+
+    }, 2000);
+  }());
   //navbar link animation 1
   /*
   $('nav.navbar a').mouseover(function(){

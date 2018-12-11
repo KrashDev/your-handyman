@@ -3,7 +3,7 @@ $(document).ready(function() {
   //review function
   (function() {
     setInterval(function() {
-      $('.review-carousel .quote.active').each(function() {
+      $('.review-carousel .quote.active, .dot.active').each(function() {
         if ($(this).hasClass('last')) {
           $(this).parent('.review-carousel').find('.first').addClass('active');
           $(this).toggleClass('active');

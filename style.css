@@ -2,6 +2,11 @@ body {
   overflow-x: hidden;
 }
 
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 /* --------- navbar section -----------*/
 
 nav.navbar {
@@ -105,30 +110,6 @@ nav.navbar #quote-button a {
   height: 800px;
 }
 
-.first-landing-button {
-  font-size: 24px;
-  border: 2px solid #5d5dbb;
-  border-radius: 30px;
-  z-index: 10;
-  position: absolute;
-  top: 55%;
-  left: 36%;
-  padding: 7px;
-  background-color: rgba(255, 0, 0, 0);
-}
-
-.second-landing-button {
-  font-size: 24px;
-  border: 2px solid #5d5dbb;
-  border-radius: 30px;
-  z-index: 10;
-  position: absolute;
-  top: 55%;
-  left: 44%;
-  padding: 7px;
-  background-color: rgba(255, 0, 0, 0);
-}
-
 .third-landing-button {
   font-size: 24px;
   border: 2px solid #5d5dbb;
@@ -156,8 +137,8 @@ img.logo-img {
   margin-bottom: 5%;
   font-size: 22px;
   font-family: 'Arvo', serif;
-  background-color: #262626;
-  color: #ffffff;
+  /* background-color: #262626;*/
+  color: #262626;
 }
 
 /*
@@ -177,6 +158,44 @@ img.logo-img {
 }
 
 /* --------- promise section -----------*/
+
+/* --------- services section -----------*/
+
+.services {
+  height: 500px;
+  background-color: #262626;
+}
+
+.services .header-text {
+  color: #ffffff;
+}
+
+.services-images img {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ffffff;
+  height: 125px;
+  margin-top: 6%;
+  width: 15%;
+}
+
+.services-text {
+  margin-left: 7%;
+  display: inline;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.services-images .check {}
+
+.services-images .hammer {
+  /* margin-left: 15%; */
+}
+
+.services-images .saw {
+  /* margin-left: 15%; */
+}
+
+/* --------- services section -----------*/
 
 /* --------- review section -----------*/
 

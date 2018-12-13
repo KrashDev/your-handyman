@@ -16,15 +16,27 @@ $(document).ready(function() {
 
     }, 2000);
   }());
-  //navbar link animation 1
-  /*
-  $('nav.navbar a').mouseover(function(){
-    $(this).css({"background-color":"#ff0000", "color":"#ffffff", "border-radius":"30px"});
+
+  /*Scroll to top when arrow up clicked BEGIN*/
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+      $('#back2Top').fadeIn();
+    } else {
+      $('#back2Top').fadeOut();
+    }
   });
-  $('nav.navbar a').mouseout(function(){
-    $(this).css({"background-color":"#ffffff", "color":"#595959"});
+  $(document).ready(function() {
+    $("#back2Top").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({
+        scrollTop: 0
+      }, "slow");
+      return false;
+    });
+
   });
-  */
+
   //navbar link animation 2
   $('nav.navbar a').mouseover(function() {
     $(this).css({

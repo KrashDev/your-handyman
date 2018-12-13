@@ -355,6 +355,23 @@ img.logo-img {
 
 /* --------- contact section -----------*/
 
+.up-arrow {
+  position: fixed;
+  float: right;
+  height: 50px;
+  width: 50px;
+  background: #333333;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#back2Top {}
+
+.up {
+  margin-top: 4px;
+  height: 40px;
+}
+
 /* --------- footer section -----------*/
 
 footer {
@@ -370,6 +387,8 @@ footer {
 }
 
 .footer-nav-links {
+  margin-top: 4%;
+  text-align: left;
   list-style: none;
 }
 

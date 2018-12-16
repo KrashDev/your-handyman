@@ -1,5 +1,42 @@
 $(document).ready(function() {
 
+  //google maps code
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var uluru = {
+      lat: -84.308454,
+      lng: 33.860634
+    };
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+      document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+
+    var APIKey = AIzaSyAJWV - SK85OFpSdJ9IkJewTyL_Ius8czFw;
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+  // <!--Load the API from the specified URL
+  // *
+  // The async attribute allows the browser to render the page
+  // while the API loads
+  //   *
+  //   The key parameter will contain your own API key(which is not needed
+  //     for this tutorial) *
+  //   The callback parameter executes the initMap()
+  //
+  // function
+  // -->
+  // <
+  // script async defer
+  // src = "https://maps.googleapis.com/maps/api/js?key=APIKey&callback=initMap" >
+
   //review function
   (function() {
     setInterval(function() {
@@ -61,6 +98,20 @@ $(document).ready(function() {
     $(this).css({
       "color": "#5d5dbb",
       "background-color": "#ffffff"
+    });
+  });
+
+  //start button
+  $('button.start').mouseover(function() {
+    $(this).css({
+      "background-color": "#ffffff",
+      "color": "#5d5dbb"
+    });
+  });
+  $('button.start').mouseout(function() {
+    $(this).css({
+      "background-color": "#5d5dbb",
+      "color": "#ffffff"
     });
   });
 

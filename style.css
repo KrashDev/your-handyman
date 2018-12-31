@@ -109,7 +109,7 @@ nav.navbar #quote-button a {
 /* --------- video section -----------*/
 
 .landing {
-  background-image: url("images/3.jpg");
+  background-image: url("images/6.jpg");
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -168,37 +168,38 @@ img.logo-img {
 /* --------- services section -----------*/
 
 .services {
-  height: 500px;
+  height: 650px;
   background-color: #262626;
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 20px;
+  /* margin-bottom: 5%; */
 }
 
 .services .header-text {
   color: #ffffff;
+  margin-bottom: 2%;
 }
 
-.services-images img {
-  padding-bottom: 15px;
+.services-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-box div {
+  padding-bottom: 1%;
   border-bottom: 2px solid #ffffff;
-  height: 125px;
-  margin-top: 6%;
-  width: 15%;
 }
 
 .services-text {
-  margin-left: 7%;
-  display: inline;
-  font-size: 20px;
-  color: #ffffff;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15%;
 }
 
-.services-images .check {}
-
-.services-images .hammer {
-  /* margin-left: 15%; */
-}
-
-.services-images .saw {
-  /* margin-left: 15%; */
+.services-info {
+  margin-right: 10%;
 }
 
 /* --------- services section -----------*/

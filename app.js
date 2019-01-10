@@ -2,26 +2,26 @@ $(document).ready(function() {
 
   //google maps code
   // Initialize and add the map
-  function initMap() {
-    // The location of Uluru
-    var uluru = {
-      lat: -84.308454,
-      lng: 33.860634
-    };
-    // The map, centered at Uluru
-    var map = new google.maps.Map(
-      document.getElementById('map'), {
-        zoom: 4,
-        center: uluru
-      });
+  // function initMap() {
+  // The location of Uluru
+  // var uluru = {
+  //   lat: -84.308454,
+  //   lng: 33.860634
+  // };
+  // The map, centered at Uluru
+  // var map = new google.maps.Map(
+  //   document.getElementById('map'), {
+  //     zoom: 4,
+  //     center: uluru
+  //   });
 
-    var APIKey = AIzaSyAJWV - SK85OFpSdJ9IkJewTyL_Ius8czFw;
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
+  // var APIKey = AIzaSyAJWV - SK85OFpSdJ9IkJewTyL_Ius8czFw;
+  // The marker, positioned at Uluru
+  //   var marker = new google.maps.Marker({
+  //     position: uluru,
+  //     map: map
+  //   });
+  // }
   // <!--Load the API from the specified URL
   // *
   // The async attribute allows the browser to render the page

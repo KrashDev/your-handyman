@@ -165,20 +165,13 @@
         </div>
       </div>
       <div class="row">
-        <!-- <img class="arrow-left" src="images/arrow-left.svg"> -->
+
         <div class="gallery-images">
           <img src="images/1.jpg">
-          <img src="images/2.jpg">
-          <img src="images/4.jpg">
-        </div>
-      </div>
-      <div class="row">
-        <div class="gallery-images">
-          <img src="images/kitchen.jpg">
+          <img src="images/7.jpg">
           <img src="images/5.jpg">
-          <img src="images/6.jpg">
         </div>
-        <!-- <img class="arrow-right" src="images/arrow-right.svg"> -->
+
       </div>
     </div>
 
@@ -190,20 +183,23 @@
           Contact us
         </div>
       </div>
+
+      <div class="row">
+        <div class="contact-text">
+          <p>Wether you have a handyman emergency or are just looking to get a free quote on a new bathroom remodel or agents are standing by to serve you everyday.</p>
+          <p> Shoot us an email or give us a call and we will rush over to fix your problems.</p>
+        </div>
+      </div>
+
+
       <div class="row">
 
         <div class="col-md-offset-1 col-md-4">
           <div id="map">
-            <img src="images/map.png">
+            <!-- <img src="images/map.png"> -->
           </div>
         </div>
 
-        <!-- <div class="col-md-offset-1 col-md-4">
-          <p>If you're looking for your dream desk or a beautiful dining room table, please dont hesitate to shoot me a message!</p>
-        </div>
-      </div> -->
-        <!-- <div class="row">
-          <div class="col-md-offset-4 col-md-4"> -->
         <div class="col-md-offset-1 col-md-4">
           <form method="POST" action="http://formspree.io/donny.gabai@gmail.com">
             <div class="row">
@@ -262,9 +258,22 @@
     </div>
   </footer>
   <!-- container div -->
+  <script>
+    var APIKey = "AIzaSyAJWV-SK85OFpSdJ9IkJewTyL_Ius8czFw";
+    var map;
 
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: -34.397,
+          lng: 150.644
+        },
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJWV-SK85OFpSdJ9IkJewTyL_Ius8czFw&callback=initMap" async defer></script>
 </body>
-
 
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="app.js"></script>

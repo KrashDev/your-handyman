@@ -109,7 +109,7 @@ nav.navbar #quote-button a {
 /* --------- video section -----------*/
 
 .landing {
-  background-image: url("images/6.jpg");
+  background-image: url("images/3.jpg");
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -283,14 +283,17 @@ img.logo-img {
 .gallery-images img {
   margin-top: 1%;
   margin: 1%;
-  filter: drop-shadow(0px 3px 5px black);
-  height: 250px;
-  width: 400px;
+  /* filter: drop-shadow(0px 3px 5px black); */
+  height: 300px;
+  width: 350px;
+  margin-bottom: 2%;
 }
 
 .gallery-images {
-  display: inline;
-  margin-left: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  /* display: inline;
+  margin-left: 10%; */
 }
 
 /* .gallery-images img:first {
@@ -338,14 +341,15 @@ img.logo-img {
   margin-bottom: 8%;
 }
 
-.contact p {
-  color: #595959;
+.contact-text p {
   font-size: 21px;
-  padding-bottom: 8%;
-  margin: 0 0 10px;
+  display: flex;
+  justify-content: center;
 }
 
-#map img {
+.contact-text p {}
+
+#map {
   height: 400px;
   border: 2px solid #666666;
 }

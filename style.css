@@ -32,10 +32,10 @@ nav.navbar {
 }
 
 #logo {
-  height: 90px;
+  height: 100px;
   position: absolute;
-  top: 6px;
-  left: 14px;
+  top: 30px;
+  left: 75px;
 }
 
 .main-text {
